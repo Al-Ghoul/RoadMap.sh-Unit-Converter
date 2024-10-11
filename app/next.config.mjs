@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "/nextjs-github-pages",
+  basePath: "/RoadMap.sh-Unit-Converter",
   images: {
     unoptimized: true,
   },
