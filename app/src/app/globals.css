@@ -25,3 +25,44 @@ body {
     text-wrap: balance;
   }
 }
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs>label {
+  order: 1;
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background: darkgray;
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
+
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.tabs>input[type="radio"] {
+  display: none;
+}
+
+.tabs>input[type="radio"]:checked+label {
+  background: white;
+  color: darkgray;
+  border: 1px solid darkgray;
+}
+
+.tabs>input[type="radio"]:checked+label+.tab {
+  display: block;
+  color: #FFF;
+  background-color: black;
+}
