@@ -65,7 +65,7 @@ function LengthConverter() {
         id="fromUnit"
         value={fromUnit}
         onChange={(e) =>
-          setFromUnit(e.target.value as keyof typeof conversionFactors)
+          setFromUnit(e.target.value)
         }
         className="text-black"
       >
@@ -85,7 +85,7 @@ function LengthConverter() {
         id="toUnit"
         value={toUnit}
         onChange={(e) =>
-          setToUnit(e.target.value as keyof typeof conversionFactors)
+          setToUnit(e.target.value)
         }
         className="text-black"
       >
