@@ -8,19 +8,17 @@ Preview URL: https://al-ghoul.github.io/RoadMap.sh-Unit-Converter/
 
 ## Development \[Nix\]
 
-This project needs [Zig](https://ziglang.org/) 13.0.0
-
 ```bash
 # Clone & cd into project
 # Enter development shell
 nix develop
 
-# Run zig build
-zig build
+# Start dev server
+cd app && npm run dev
 ```
 
 ## Technology stack
 
-- [Zig](https://ziglang.org/)
+- [NextJS](https://nextjs.org/)
 - [Nix](https://nixos.org/nix/)
 
